@@ -23,7 +23,7 @@ func connectConsumer(brokersUrl []string) (sarama.Consumer, error) {
 
 func main() {
 	topic := "comments"
-	worker, err := connectConsumer([]string{"localhost:29092"})
+	worker, err := connectConsumer([]string{"localhost:9092"})
 	if err != nil {
 		panic(err)
 	}
